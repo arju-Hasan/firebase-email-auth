@@ -107,7 +107,7 @@ const Register = () => {
                         className="input input-bordered" required />
                     <button
                         onClick={() => setShowPassword(!showPassword)}
-                        className='btn btn-xs absolute right-2 top-12'>
+                        className='btn btn-xs absolute right-5 top-7'>
                         {
                             showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>
                         }
@@ -133,7 +133,7 @@ const Register = () => {
                 success && <p className='text-green-600'>Sign up is Successful.</p>
             }
             <p className='m-2'>
-                Already have an account? Please <Link to="/login">Login</Link>
+                Already have an account? Please <Link to="/login" className='text-blue-500'>Login</Link>
             </p>
         </div>
     );

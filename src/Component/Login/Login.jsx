@@ -72,7 +72,7 @@ const Login = () => {
                             </label>
                             <input type="password" name='password' placeholder="password" className="input input-bordered" required />
                             <label onClick={handleForgetPassword} className="label">
-                                <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+                                <a href="#" className="label-text-alt link link-hover p-4">Forgot password?</a>
                             </label>
                         </div>
                         <div className="form-control mt-6">
@@ -87,7 +87,7 @@ const Login = () => {
                         loginError && <p className='text-red-500'>{loginError}</p>
                     }
 
-                    <p>New to this website? please <Link to="/register">Sign up</Link></p>
+                    <p>New to this website? please <Link to="/register" className='text-blue-500'>Sign up</Link></p>
 
                 </div>
             </div>
